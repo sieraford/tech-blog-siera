@@ -1,0 +1,33 @@
+<div class='display-flex justify-center'>
+  <div class='col-md-6'>
+    <h2>Login</h2>
+
+    <form data-parsley-validate='' class='form login-form'>
+      <div class='form-group'>
+        <label for='email'>Email:</label>
+        <input
+          class='form-input'
+          data-parsley-trigger='change'
+          type='email'
+          id='email-login'
+          required=''
+        />
+      </div>
+      <div class='form-group'>
+        <label for='password-login'>Password:</label>
+        <input
+          class='form-input'
+          type='password'
+          id='password-login'
+          required=''
+        />
+      </div>
+      <div class='form-group'>
+        <button class='btn btn-primary' type='submit'>Login</button>
+        <a href='/signup'>Sign up instead</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src='./js/login.js'></script>

@@ -1,0 +1,43 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Pantry Pal</title>
+    <link rel='stylesheet' href='/css/jass.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+
+  <body>
+    <div class='background flex-column justify-space-around'>
+      <header class='display-flex justify-space-between align-center p-2'>
+        <nav class="nav-text">
+            <!-- if the user is logged in, display the add item and logout links in the nav bar header -->
+            <a class="nav-text" href='/'>Home</a>
+            <a class="nav-text" href='/dashboard'>Dashboard</a>
+            {{#if logged_in}}
+            <button class='nav-text no-button' id='logout'>Logout</button>
+            {{else}}
+            <a class="nav-text" href='/login'>Login</a>
+            {{/if}}
+        </nav>
+      </header>
+      <main class='container container-fluid mt-5'>
+        <!-- Render all views to the homepage-->
+        {{{body}}}
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+
+  </body>
+
+</html>
+
+</html>

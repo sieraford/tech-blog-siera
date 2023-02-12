@@ -1,0 +1,40 @@
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.background {
+  background: rgba(76, 175, 80, 0.6);
+  height: 100vh;
+  background-size: cover;
+}
+
+.title {
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+  color: #0b2c5a;
+  text-decoration: none;
+}
+
+.nav-text {
+  font-size: 1.25em;
+  color: #0b2c5a;
+}
+
+nav {
+  justify-content: space-between;
+}
