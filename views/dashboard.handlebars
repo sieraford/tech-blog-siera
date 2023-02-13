@@ -1,7 +1,7 @@
-  <div class="row">
-  <div class="col-auto">
+<div class="row">
+<div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
-  </div>
+</div>
 </div>
   {{#if posts.length}}
   <div class="col-md-6 post-list">
@@ -20,6 +20,9 @@
     {{/each}}
   </div>
   {{/if}}
+  <div>
+    <button class="btn">New Post</button>
+  </div>
 </div>
 
 <script src="./js/dashboard.js"></script>
