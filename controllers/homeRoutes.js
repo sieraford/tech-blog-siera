@@ -85,4 +85,12 @@ router.get('/signup', (req, res) => {
   }
 });
 
+router.get('/create', (req, res) => {
+  try { 
+    res.render('new-post');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

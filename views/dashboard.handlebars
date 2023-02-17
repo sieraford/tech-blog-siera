@@ -1,8 +1,8 @@
+<h2>Welcome, {{name}}!</h2>
+  <div>
+    <a href='/create' class="btn">New Post</a>
+  </div>
 <div class="row">
-<div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-</div>
-</div>
   {{#if posts.length}}
   <div class="col-md-6 post-list">
     <h3>Your Posts:</h3>
@@ -20,9 +20,6 @@
     {{/each}}
   </div>
   {{/if}}
-  <div>
-    <button class="btn">New Post</button>
-  </div>
 </div>
 
 <script src="./js/dashboard.js"></script>
